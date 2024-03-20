@@ -1,0 +1,12 @@
+Tutorial
+
+criando modelo Venda e Compra
+	rails g model venda nome_venda:string valor_venda:decimal
+	rails g model compra nome_venda:string valor_venda:decimal
+
+Concerns vai criar metodos comuns para os Models, funcionando para view e controller
+
+Nosso metodo comum aos dois modelos vai ser "valor_para_modela", esse metodo pega o decial e transforma em modela BR
+	models/concerns
+	o nome do field da tabela devem ser iguais
+	

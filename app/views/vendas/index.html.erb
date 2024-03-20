@@ -1,0 +1,17 @@
+<h1>Vendas</h1>
+
+<table>
+	<tr>
+		<th>Nome</th>
+		<th>Valor Venda</th>
+		<th>Ativo</th>
+	</tr>
+
+	<% @vendas.each do |v| %>
+		<tr>
+			<td><%= v.nome %></td>
+			<td><%= v.valor %></td>
+			<td><%= v.ativo %></td>
+		</tr>
+	<% end %>
+</table>

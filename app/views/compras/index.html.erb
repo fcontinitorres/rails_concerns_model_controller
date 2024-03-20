@@ -1,0 +1,17 @@
+<h1>Compras</h1>
+
+<table>
+	<tr>
+		<th>Nome</th>
+		<th>Valor Compra</th>
+		<th>Ativo</th>
+	</tr>
+
+	<% @compras.each do |c| %>
+		<tr>
+			<td><%= c.nome %></td>
+			<td><%= c.valor %></td>
+			<td><%= c.ativo %></td>
+		</tr>
+	<% end %>
+</table>
